@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohd Azhar | Parallax Portfolio</title>
+  <title>Mohd Azhar | Text Parallax Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -17,16 +17,15 @@
 
     body {
       background: #0b0b0b;
-      color: #fff;
+      color: #ffffff;
+      line-height: 1.6;
     }
 
     /* PARALLAX SECTIONS */
     .parallax {
       min-height: 100vh;
       background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,30 +33,42 @@
       position: relative;
     }
 
-    .overlay {
-      background: rgba(0,0,0,0.6);
+    .parallax.alt {
+      background: linear-gradient(135deg, #1c1c1c, #000000);
+    }
+
+    .parallax.deep {
+      background: linear-gradient(135deg, #000428, #004e92);
+    }
+
+    .content {
+      max-width: 900px;
       padding: 60px;
-      border-radius: 12px;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 3.8rem;
       font-weight: 800;
+      letter-spacing: 1px;
     }
 
     h1 span {
       color: #00ffd5;
     }
 
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
     p {
-      margin-top: 15px;
       font-size: 1.2rem;
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     /* NORMAL SECTIONS */
     section {
-      padding: 80px 10%;
+      padding: 100px 12%;
       background: #0b0b0b;
     }
 
@@ -68,31 +79,21 @@
       padding-left: 15px;
     }
 
-    .projects {
+    .skills {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 30px;
     }
 
-    .project {
+    .skill {
       background: #141414;
+      padding: 30px;
       border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.4s ease;
+      transition: transform 0.3s ease;
     }
 
-    .project:hover {
-      transform: translateY(-10px);
-    }
-
-    .project img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .project div {
-      padding: 20px;
+    .skill:hover {
+      transform: translateY(-8px);
     }
 
     footer {
@@ -110,16 +111,19 @@
       h1 {
         font-size: 2.5rem;
       }
+      h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- HERO PARALLAX -->
-  <div class="parallax" style="background-image: url('images/hero.jpg');">
-    <div class="overlay">
+  <!-- HERO -->
+  <div class="parallax">
+    <div class="content">
       <h1>Mohd <span>Azhar</span></h1>
-      <p>Cinematic Editor • Creative Storyteller • AI Visuals</p>
+      <p>Cinematic Editor • Creative Storyteller • AI-Enhanced Visuals</p>
     </div>
   </div>
 
@@ -127,49 +131,48 @@
   <section>
     <h2 class="title">About Me</h2>
     <p>
-      I specialize in cinematic storytelling, podcast visuals, branding,
-      and AI-powered creative content. I design experiences that stop the scroll
-      and stay in memory.
+      I design cinematic digital experiences using storytelling,
+      motion, and AI-powered visuals. My focus is on clarity,
+      emotion, and scroll-stopping impact.
     </p>
   </section>
 
   <!-- PARALLAX BREAK -->
-  <div class="parallax" style="background-image: url('images/project1.jpg');">
-    <div class="overlay">
-      <h2>Visuals That Speak</h2>
-      <p>Designed to feel. Built to last.</p>
+  <div class="parallax alt">
+    <div class="content">
+      <h2>Stories Over Noise</h2>
+      <p>Less clutter. More meaning.</p>
     </div>
   </div>
 
-  <!-- PROJECTS -->
+  <!-- SKILLS -->
   <section>
-    <h2 class="title">Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <img src="images/project1.jpg" alt="Podcast Visuals">
-        <div>
-          <h3>Podcast Visuals</h3>
-          <p>AI-driven cinematic storytelling for business podcasts.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="images/project2.jpg" alt="Brand Campaign">
-        <div>
-          <h3>Brand Campaigns</h3>
-          <p>Creative reels & posters built for high retention.</p>
-        </div>
-      </div>
+    <h2 class="title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Cinematic Video Editing</div>
+      <div class="skill">Podcast Visual Design</div>
+      <div class="skill">Creative Direction</div>
+      <div class="skill">AI Visuals & Motion</div>
+      <div class="skill">Brand Storytelling</div>
     </div>
   </section>
 
-  <!-- FINAL PARALLAX -->
-  <div class="parallax" style="background-image: url('images/hero.jpg');">
-    <div class="overlay">
-      <h2>Let’s Create Something Powerful</h2>
-      <p>📩 mdazhar1137@gmail.com</p>
+  <!-- PARALLAX BREAK -->
+  <div class="parallax deep">
+    <div class="content">
+      <h2>Design That Moves</h2>
+      <p>Not just visuals — experiences.</p>
     </div>
   </div>
+
+  <!-- CONTACT -->
+  <section>
+    <h2 class="title">Contact</h2>
+    <p>
+      Let’s build something powerful.<br>
+      📩 mdazhar1137@gmail.com
+    </p>
+  </section>
 
   <footer>
     © 2026 Mohd Azhar
