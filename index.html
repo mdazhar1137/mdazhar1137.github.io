@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Azhar | Creative Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    header h1 span {
+      color: #00ffd5;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      border-left: 5px solid #00ffd5;
+      padding-left: 15px;
+    }
+
+    .about {
+      max-width: 800px;
+      opacity: 0.9;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-card {
+      background: #141414;
+      padding: 25px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #111;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #222;
+    }
+
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: #00ffd5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 10%;
+      background: #050505;
+      opacity: 0.8;
+    }
+
+    footer a {
+      color: #00ffd5;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Mohd <span>Azhar</span></h1>
+      <p>Creative Editor • Visual Storyteller • AI-Enhanced Content</p>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">About Me</h2>
+    <p class="about">
+      I’m a creative professional focused on cinematic storytelling, 
+      podcast visuals, branding, and AI-powered content. I love mixing 
+      design, motion, and narrative to create scroll-stopping experiences.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill-card">Video Editing (Cinematic)</div>
+      <div class="skill-card">Podcast Visual Design</div>
+      <div class="skill-card">Branding & Posters</div>
+      <div class="skill-card">AI Visuals & Motion</div>
+      <div class="skill-card">Creative Direction</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Business Podcast Visuals</h3>
+        <p>AI-powered storytelling with cinematic graphics and HUD elements.</p>
+      </div>
+      <div class="project-card">
+        <h3>Brand Campaigns</h3>
+        <p>Creative campaigns for bottles, lifestyle products, and media brands.</p>
+      </div>
+      <div class="project-card">
+        <h3>Creative Reels</h3>
+        <p>High-retention reels designed for Instagram and YouTube Shorts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📩 Contact: <a href="mailto:mdazhar1137@gmail.com">mdazhar1137@gmail.com</a></p>
+    <p>© 2026 Mohd Azhar</p>
+  </footer>
+
+</body>
+</html>
